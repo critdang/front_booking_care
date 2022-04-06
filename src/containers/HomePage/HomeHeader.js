@@ -138,6 +138,7 @@ const mapStateToProps = state => {
     //lấy biến thông qua props
     return {
         isLoggedIn: state.user.isLoggedIn,
+        userInfo: state.user.userInfo,
         language: state.app.language,
     };
 };
