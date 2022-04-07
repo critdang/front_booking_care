@@ -9,7 +9,9 @@ class UserRedux extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            genderArr:[]
+            genderArr:[],
+            positionArr:[],
+            roleArr:[],
         }
     }
 
@@ -29,11 +31,22 @@ class UserRedux extends Component {
                 genderArr: this.props.genderRedux
             })
         }
+        if(prevProps.roleRedux !== this.props.roleRedux) {
+            this.setState({
+                roleArr: this.props.roleRedux
+            })
+        }
+        if(prevProps.positionRedux !== this.props.positionRedux) {
+            this.setState({
+                positionArr: this.props.positionRedux
+            })
+        }
     }
     render() {
         let genders = this.state.genderArr;
         let language = this.props.language;
         let isGetGenders = this.props.isLoadingGender;
+        console.log('check state component',this.state);
         return (
             <div className="user-redux-container">
                 <div className="title">
