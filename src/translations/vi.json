@@ -51,6 +51,7 @@
         "position": "Chức danh",
         "role": "Vai trò",
         "image": "Ảnh địa diện",
-        "save": "Lưu users"
+        "save": "Lưu người dùng",
+        "edit": "Lưu thay đổi"
     }
 }
